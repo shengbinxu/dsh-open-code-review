@@ -246,6 +246,11 @@ OCR_BINARY=/path/to/ocr pnpm test   # 显式指定 ocr 二进制
 pnpm run build
 ```
 
+## 文档
+
+- [插件源码解读：一个最小 dsh 插件的开发机制](docs/plugin-architecture.md) —— 逐文件拆解源码，理解 dsh 插件怎么开发。
+- [审查数据流：dsh agent 与 open-code-review 如何配合](docs/review-data-flow.md) —— 从模型决策到审查意见的完整数据流。
+
 ## License
 
 [MIT](LICENSE)。本插件只**调用** `ocr` 二进制，不打包 open-code-review 的任何源码；open-code-review 本身为 Apache-2.0。
