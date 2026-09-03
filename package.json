@@ -1,5 +1,5 @@
 {
-  "name": "@shengbinxu/dsh-open-code-review",
+  "name": "@shengbin_xu/dsh-open-code-review",
   "version": "0.1.0",
   "description": "A DeepSeek Harness (dsh) plugin exposing alibaba/open-code-review (ocr) delegation mode as typed, model-facing tools.",
   "type": "module",

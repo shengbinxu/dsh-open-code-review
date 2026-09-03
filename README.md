@@ -73,7 +73,7 @@ open-code-review 有两种模式，本插件**只用委托模式（delegate）**
 
 ```sh
 # 发布到 npm 后（推荐）
-npm install @shengbinxu/dsh-open-code-review
+npm install @shengbin_xu/dsh-open-code-review
 ```
 
 > 尚未发布 npm 前，可从源码安装：`git clone` 后 `pnpm install && pnpm build`，再 `pnpm add file:../dsh-open-code-review`。
@@ -85,7 +85,7 @@ npm install @shengbinxu/dsh-open-code-review
 ```yaml
 - insert:
     - id: open-code-review
-      name: '@shengbinxu/dsh-open-code-review'
+      name: '@shengbin_xu/dsh-open-code-review'
 ```
 
 之后启动 dsh，直接对 agent 说「review 一下我的改动」即可。
@@ -198,7 +198,7 @@ ocr rules check src/account/login.go
 
 ```yaml
 - id: open-code-review
-  name: '@shengbinxu/dsh-open-code-review'
+  name: '@shengbin_xu/dsh-open-code-review'
   config:
     binaryPath: /usr/local/bin/ocr
     repo: /path/to/repo
