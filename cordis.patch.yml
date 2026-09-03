@@ -1,10 +1,8 @@
 # Mount the open-code-review tools into a dsh profile.
 #
 # Add this patch as an overlay (`dsh --patch cordis.patch.yml`) or merge the
-# `insert` rows into your profile's own cordis.patch.yml. `binaryPath` is
-# optional: omit it to resolve `ocr` from PATH (the default).
+# `insert` rows into your profile's own cordis.patch.yml. `config` is optional:
+# omit it to resolve `ocr` from PATH (the default).
 - insert:
     - id: open-code-review
       name: '@shengbinxu/dsh-open-code-review'
-      config:
-        binaryPath: ocr

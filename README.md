@@ -48,7 +48,7 @@ The plugin requires the `tools` and `subprocess` services — both ship in every
 
 | Field | Default | Meaning |
 |---|---|---|
-| `binaryPath` | PATH lookup | Explicit path to the `ocr` binary |
+| `binaryPath` | `ocr` via PATH | Explicit `ocr` binary path or PATH name |
 | `repo` | `process.cwd()` | Repository root for `ocr` commands |
 | `timeoutMs` | `60000` | Per-call timeout |
 | `graceMs` | `3000` | SIGTERM→SIGKILL grace for a spawned `ocr` |
