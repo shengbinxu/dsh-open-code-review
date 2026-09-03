@@ -69,14 +69,29 @@ open-code-review 有两种模式，本插件**只用委托模式（delegate）**
 
   低于 v1.9.0 会在首次调用时**直接报错并提示升级**（不静默降级）。
 
-### 安装
+### 安装（从源码 / GitHub）
+
+本插件通过 GitHub 分发；构建产物 `lib/` 已随仓库提交，clone 后**无需先编译**即可使用。
+
+**方式一：从 GitHub 直接安装到你的项目**
 
 ```sh
-# 发布到 npm 后（推荐）
-npm install @shengbin_xu/dsh-open-code-review
+pnpm add github:shengbinxu/dsh-open-code-review
+# 或：npm install github:shengbinxu/dsh-open-code-review
 ```
 
-> 尚未发布 npm 前，可从源码安装：`git clone` 后 `pnpm install && pnpm build`，再 `pnpm add file:../dsh-open-code-review`。
+**方式二：clone 后本地安装**
+
+```sh
+git clone https://github.com/shengbinxu/dsh-open-code-review
+cd dsh-open-code-review
+pnpm install            # 只装依赖；lib/ 已提交，无需 build
+
+# 再在你的 dsh 项目里：
+pnpm add file:../dsh-open-code-review
+```
+
+装好后，挂载一行（见下）。
 
 ### 挂载
 
