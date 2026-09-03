@@ -17,6 +17,9 @@ importers:
       '@deepseek-ai/dsh-subprocess':
         specifier: 0.1.2-rc.1
         version: 0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)
+      '@deepseek-ai/dsh-subprocess-local':
+        specifier: 0.1.2-rc.1
+        version: 0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)(@deepseek-ai/dsh-subprocess@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))(@deepseek-ai/dsh-timeout@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))
       '@deepseek-ai/dsh-tools':
         specifier: 0.1.2-rc.1
         version: 0.1.2-rc.1(de5e1ff2d608fbe22667925341ad1dfc)
@@ -102,6 +105,13 @@ packages:
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.2
       '@deepseek-ai/dsh-scope': ^0.1.2-rc.1
+
+  '@deepseek-ai/dsh-subprocess-local@0.1.2-rc.1':
+    resolution: {integrity: sha512-Spc/IXWvjEteGysifGr6JvCokcH8T88z0mdxIGcu9SFdgDyY8HKR+h5yq73+rbo4RYzT7+TBE43TIZy5LfmzgQ==}
+    peerDependencies:
+      '@deepseek-ai/cordis': ^4.0.2
+      '@deepseek-ai/dsh-subprocess': ^0.1.2-rc.1
+      '@deepseek-ai/dsh-timeout': ^0.1.2-rc.1
 
   '@deepseek-ai/dsh-subprocess@0.1.2-rc.1':
     resolution: {integrity: sha512-roTna1QHNpR5NsOLBWRai+GxW1hQAUyIyXOg5tsAIPXt7dug/kZJXeryiR9e92Fc/yoXzHMgrBQCThuXuo97LA==}
@@ -322,6 +332,86 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.6.0':
     resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
+
+  '@koromix/koffi-darwin-arm64@3.2.0':
+    resolution: {integrity: sha512-UfIfdmrUYBBC56jq+6rlyUCKGPiA2XnXTTzp5S1jXeDkXFdc2Sg8C1Zj/fi7XM0e6CgA416i3GsuE5oKfe0FZw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@koromix/koffi-darwin-x64@3.2.0':
+    resolution: {integrity: sha512-kTT+DOP9ymb8LCoJQrs5tvm6NWGbrqcGNdhlnZL+BndHOCoaYl7xzCzFmlKpAsS3Y1Uvyr2znrut/b+7wOuiOg==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@koromix/koffi-freebsd-arm64@3.2.0':
+    resolution: {integrity: sha512-NxM8Lv8IHfuWxxtTzjz81haUFdraFVEe0aB6YN7c66tsyXMvbUiB5sbBDfjPa1NeMEBDhfFj3gGmawxY3i+93w==}
+    cpu: [arm64]
+    os: [freebsd]
+
+  '@koromix/koffi-freebsd-ia32@3.2.0':
+    resolution: {integrity: sha512-iOvIomlKzHgx29TgSJiACX5u48mWx+eEjkKcNZbD7mY/9K0YJ0/PtbqCO91RavdzTJakvDk8yImTEIml+xfBUg==}
+    cpu: [ia32]
+    os: [freebsd]
+
+  '@koromix/koffi-freebsd-x64@3.2.0':
+    resolution: {integrity: sha512-6yPK5X7/pRvhU/mSynNNCC3PCHKmbBmwJsCmg4C9Gi14oCzkahGxxFUhs/4KjblyPh/EnT5dGnc46Zo7rW1aeg==}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@koromix/koffi-linux-arm64@3.2.0':
+    resolution: {integrity: sha512-1zgAIK9KG7PY/eWOHnYrmGQh8VHBF9AzFee8PH7YWCJK1iE/cmKt2sctOlDeNBkKzvUpmaMz3LSgg66f15Xklg==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@koromix/koffi-linux-arm@3.2.0':
+    resolution: {integrity: sha512-6wNoA20K9UWVFesLUBpvh8NOT92HAYGtjWae65B2Xb7QSvU5reg7jd01xjRqaacNGwj5xeJ60UWFAGUOsVo9MQ==}
+    cpu: [arm]
+    os: [linux]
+
+  '@koromix/koffi-linux-ia32@3.2.0':
+    resolution: {integrity: sha512-dnK7II/P6408YDxylLmxgrbzGhL3w3P+AjN5HEimm//elO5e5LJl3VXi+u3Lrvfov5cHlnVwN8X4qIqchi0qTA==}
+    cpu: [ia32]
+    os: [linux]
+
+  '@koromix/koffi-linux-loong64@3.2.0':
+    resolution: {integrity: sha512-5gRWmjyldyl/0NaL3jxVRdN6u79i4krIpyHCICq+leoiez91ycZe+Vsq6Y4AbzcZ+mK4iNf4q4QCwvBAX5+ejg==}
+    cpu: [loong64]
+    os: [linux]
+
+  '@koromix/koffi-linux-riscv64@3.2.0':
+    resolution: {integrity: sha512-nSnQ8o0NLn8ttOrdLad17xZu4iYeX/Ps7wAnvi9kxGve4pxOAwY6N7MLwSUHP2fZXi74ognY0uN2lRObOp1j2Q==}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@koromix/koffi-linux-x64@3.2.0':
+    resolution: {integrity: sha512-EWd0IQDzUUlxkNt7Sx9qPpGVvPTfqqqI7LCdocpjkxrARyguYGOPGJv3goSvoz3e95AyOZeojTlPKyqioAB5Ow==}
+    cpu: [x64]
+    os: [linux]
+
+  '@koromix/koffi-openbsd-ia32@3.2.0':
+    resolution: {integrity: sha512-oUQzB56M1hMgkqelSpkJZKaQFrsAi19qwHI0xBwTLXHpX2HTZee92sF6fsxQIg7VD2f4fPjFDTjcC9vbRfB4UQ==}
+    cpu: [ia32]
+    os: [openbsd]
+
+  '@koromix/koffi-openbsd-x64@3.2.0':
+    resolution: {integrity: sha512-YJG4kCycHD5IGyCF6oJpHaSJ+j5rB1Y8DRHPW1M6gdYHvVd0kiDwLvKzSgAJ3l15KI5+wXalVZtugvV+1DaIPw==}
+    cpu: [x64]
+    os: [openbsd]
+
+  '@koromix/koffi-win32-arm64@3.2.0':
+    resolution: {integrity: sha512-PnbLrDVyxdQdJJItUSgBPMH0BAvTqCDjNT0XmIZv2qdKV1TVqfMTYMhjfJKWrRfkXDPExJyhjTBdAidQGwuUPQ==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@koromix/koffi-win32-ia32@3.2.0':
+    resolution: {integrity: sha512-d14KDZxJsK/nGK4Rb6jc4J76JLQztesVbRkbpKXEpvy4MxCrgFXwe5DTMP3nD4CRTmOGe9FzRfphAQBm9Dbkig==}
+    cpu: [ia32]
+    os: [win32]
+
+  '@koromix/koffi-win32-x64@3.2.0':
+    resolution: {integrity: sha512-09p81HVKDsLXkyMRrLQzsFtCjdcFgbRW765roAu5iChHj4gfWVrGDdvtBldc1BulIEgH1/gRwa2E4vEtW3/hlw==}
+    cpu: [x64]
+    os: [win32]
 
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
     resolution: {integrity: sha512-oTXEIha4SsuXdTA4Iyskj0kpdx2yVXdhd75c2v3xGrHFfVMsbhTPZU/nMPL4sWKo4pBHm3aucLaqGlF696dTyQ==}
@@ -559,6 +649,9 @@ packages:
   js-tokens@9.0.1:
     resolution: {integrity: sha512-mxa9E9ITFOt0ban3j6L5MpjwegGz6lBQmM1IJkWeBZGcMxto50+eWdjC/52xDbS2vy0k7vIMK0Fe2wfL9OQSpQ==}
 
+  koffi@3.2.0:
+    resolution: {integrity: sha512-U/7o2QkSGt28UE+74mQyLOdMxUIos9N2RrSwHFcXYLyb1hK1HukSYFQ3RxaEypcWbKUL+JbMheBxGuFn8PRk9w==}
+
   loupe@3.2.1:
     resolution: {integrity: sha512-CdzqowRJCeLU72bHvWqwRBBlLcMEtIvGrlvef74kMnV2AolS9Y8xUv1I0U/MNAWMhBlKIoyuEgoJ0t/bbwHbLQ==}
 
@@ -572,6 +665,12 @@ packages:
     resolution: {integrity: sha512-DTg4MJbGMWkfi6VZFdNt2/caMbQy4Ou+Op/hJQvGEWcnVfoA1QA+xzRKAzw9jD6+GVOOeYr/mIcuDSdug6F6+w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  node-addon-api@7.1.1:
+    resolution: {integrity: sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==}
+
+  node-pty@1.2.0-beta.15:
+    resolution: {integrity: sha512-vORSzHXi4Ofl7HemVWpuudLqCPdaQb4LfpRCUpE5HPxhp4JYscl8zZwxh11p26v2wvW24WMwnMfLjhRLixrfxA==}
 
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
@@ -786,6 +885,14 @@ snapshots:
       '@deepseek-ai/dsh-scope': 0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)(@deepseek-ai/dsh-invariants@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))
       '@deepseek-ai/dsh-util-values': 0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)
 
+  '@deepseek-ai/dsh-subprocess-local@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)(@deepseek-ai/dsh-subprocess@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))(@deepseek-ai/dsh-timeout@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2))':
+    dependencies:
+      '@deepseek-ai/cordis': 4.0.2
+      '@deepseek-ai/dsh-subprocess': 0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)
+      '@deepseek-ai/dsh-timeout': 0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)
+      koffi: 3.2.0
+      node-pty: 1.2.0-beta.15
+
   '@deepseek-ai/dsh-subprocess@0.1.2-rc.1(@deepseek-ai/cordis@4.0.2)':
     dependencies:
       '@deepseek-ai/cordis': 4.0.2
@@ -925,6 +1032,54 @@ snapshots:
     optional: true
 
   '@jridgewell/sourcemap-codec@1.6.0': {}
+
+  '@koromix/koffi-darwin-arm64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-darwin-x64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-freebsd-arm64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-freebsd-ia32@3.2.0':
+    optional: true
+
+  '@koromix/koffi-freebsd-x64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-linux-arm64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-linux-arm@3.2.0':
+    optional: true
+
+  '@koromix/koffi-linux-ia32@3.2.0':
+    optional: true
+
+  '@koromix/koffi-linux-loong64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-linux-riscv64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-linux-x64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-openbsd-ia32@3.2.0':
+    optional: true
+
+  '@koromix/koffi-openbsd-x64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-win32-arm64@3.2.0':
+    optional: true
+
+  '@koromix/koffi-win32-ia32@3.2.0':
+    optional: true
+
+  '@koromix/koffi-win32-x64@3.2.0':
+    optional: true
 
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
     optional: true
@@ -1127,6 +1282,25 @@ snapshots:
 
   js-tokens@9.0.1: {}
 
+  koffi@3.2.0:
+    optionalDependencies:
+      '@koromix/koffi-darwin-arm64': 3.2.0
+      '@koromix/koffi-darwin-x64': 3.2.0
+      '@koromix/koffi-freebsd-arm64': 3.2.0
+      '@koromix/koffi-freebsd-ia32': 3.2.0
+      '@koromix/koffi-freebsd-x64': 3.2.0
+      '@koromix/koffi-linux-arm': 3.2.0
+      '@koromix/koffi-linux-arm64': 3.2.0
+      '@koromix/koffi-linux-ia32': 3.2.0
+      '@koromix/koffi-linux-loong64': 3.2.0
+      '@koromix/koffi-linux-riscv64': 3.2.0
+      '@koromix/koffi-linux-x64': 3.2.0
+      '@koromix/koffi-openbsd-ia32': 3.2.0
+      '@koromix/koffi-openbsd-x64': 3.2.0
+      '@koromix/koffi-win32-arm64': 3.2.0
+      '@koromix/koffi-win32-ia32': 3.2.0
+      '@koromix/koffi-win32-x64': 3.2.0
+
   loupe@3.2.1: {}
 
   magic-string@0.30.21:
@@ -1136,6 +1310,12 @@ snapshots:
   ms@2.1.3: {}
 
   nanoid@3.3.18: {}
+
+  node-addon-api@7.1.1: {}
+
+  node-pty@1.2.0-beta.15:
+    dependencies:
+      node-addon-api: 7.1.1
 
   pathe@2.0.3: {}
 
